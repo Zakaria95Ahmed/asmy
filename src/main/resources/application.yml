@@ -1,0 +1,30 @@
+jwt:
+     ZAG_ZAG: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6ImJkdCBhc215IiwiaWF0IjoyMzExMjAyMH0.3xY5k7UZR_oH2tdu3dTh2ydIYAH7pdmJAyOtGvu4S58'
+
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    #Data source config
+    # Datasource URL
+
+    url: jdbc:mysql://localhost:3306/asmy
+    # Datasource User
+    username: root
+    # Datasource password
+    password: #MySql-Workbench@2020
+
+  jpa:
+    # JPA Show SQL
+    show-sql: true
+    # JPA Hibernate AUTO DDL (for changes on entities to be automatically made in DB)
+    hibernate:
+       ddl-auto: update
+
+    properties:
+      # JPA DB Platform
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
